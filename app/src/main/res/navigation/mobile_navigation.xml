@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.eevs.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.eevs.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_studentAdmissionFragment"
+            app:destination="@id/studentAdmissionFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_visaApplicationFragment"
+            app:destination="@id/visaApplicationFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_healthInsuranceFragment"
+            app:destination="@id/healthInsuranceFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_professionalYearFragment"
+            app:destination="@id/professionalYearFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.example.eevs.ui.contact.ContactFragment"
+        android:label="@string/title_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/studentAdmissionFragment"
+        android:name="com.example.eevs.ui.StudentAdmissionFragment"
+        android:label="fragment_student_admission"
+        tools:layout="@layout/fragment_student_admission" />
+    <fragment
+        android:id="@+id/visaApplicationFragment"
+        android:name="com.example.eevs.ui.VisaApplicationFragment"
+        android:label="fragment_visa_application"
+        tools:layout="@layout/fragment_visa_application" />
+    <fragment
+        android:id="@+id/healthInsuranceFragment"
+        android:name="com.example.eevs.ui.HealthInsuranceFragment"
+        android:label="fragment_health_insurance"
+        tools:layout="@layout/fragment_health_insurance" />
+    <fragment
+        android:id="@+id/professionalYearFragment"
+        android:name="com.example.eevs.ui.ProfessionalYearFragment"
+        android:label="fragment_professional_year"
+        tools:layout="@layout/fragment_professional_year" />
+</navigation>
