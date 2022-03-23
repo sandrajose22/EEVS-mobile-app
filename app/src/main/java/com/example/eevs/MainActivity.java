@@ -6,6 +6,8 @@ import android.util.Log;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.customview.widget.Openable;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -18,6 +20,8 @@ import java.util.Objects;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+
+    private NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_contact)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 //        NavigationUI.setupWithNavController(binding.toolbar, navController);
@@ -42,22 +46,23 @@ public class MainActivity extends AppCompatActivity {
         binding.toolbar.setTitle("");
         navController.addOnDestinationChangedListener((navController1, navDestination, bundle) -> {
             Log.i("destination ", navDestination.getId() + "");
-            switch (navDestination.getId()) {
-                case R.id.navigation_home:
-                case R.id.navigation_dashboard:
-                case R.id.navigation_contact:
-//                    Objects.requireNonNull(getSupportActionBar()).setDisplayUseLogoEnabled(true);
-//                    getSupportActionBar().setDisplayShowTitleEnabled(false);
-//                    getSupportActionBar().setLogo(R.drawable.ic_dashboard_black_24dp);
-                    binding.toolbar.setTitle("");
-//                default:
-//                    Objects.requireNonNull(getSupportActionBar()).setDisplayUseLogoEnabled(false);
-//                    getSupportActionBar().setDisplayShowHomeEnabled(true);
-//                    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//                    binding.toolbar.setTitle("");
+            int id = navDestination.getId();
+            if (id == R.id.navigation_home || id == R.id.navigation_dashboard || id == R.id.navigation_contact) {
+                Objects.requireNonNull(getSupportActionBar()).setDisplayUseLogoEnabled(true);
+                Objects.requireNonNull(getSupportActionBar()).setLogo(ContextCompat.getDrawable(getApplicationContext(), R.drawable.logo));
+                binding.toolbar.setTitle("");
+            } else {
+                binding.toolbar.setTitle("");
+                Objects.requireNonNull(getSupportActionBar()).setDisplayUseLogoEnabled(false);
             }
         });
 
     }
 
+    //Setting Up the back button
+    @Override
+    public boolean onSupportNavigateUp() {
+//        return super.onSupportNavigateUp();
+        return NavigationUI.navigateUp(navController, (Openable) null);
+    }
 }

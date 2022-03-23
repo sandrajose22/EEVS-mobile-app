@@ -69,17 +69,16 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-        <!--        <include-->
-        <!--            android:id="@+id/bottom_sheet_parent"-->
-        <!--            layout="@layout/bottom_sheet_container"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:background="@drawable/bottom_sheet_background"-->
-        <!--            app:behavior_hideable="false"-->
-        <!--            app:behavior_peekHeight="0dp"-->
-        <!--            app:layout_anchorGravity="bottom"-->
-        <!--            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">-->
-        <!--        </include>-->
+<!--        <include-->
+<!--            android:id="@+id/bottom_sheet_parent"-->
+<!--            layout="@layout/bottom_sheet_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/bottom_sheet_background"-->
+<!--            app:behavior_hideable="false"-->
+<!--            app:behavior_peekHeight="0dp"-->
+<!--            app:layout_anchorGravity="bottom"-->
+<!--            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"></include>-->
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
