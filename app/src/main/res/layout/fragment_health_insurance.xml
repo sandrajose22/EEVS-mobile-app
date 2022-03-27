@@ -42,8 +42,8 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/health_insurance" />
 
             </LinearLayout>
 
@@ -56,7 +56,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="Contentttttttttttttttttttttt"
+            android:text="All of the insurance providers have their own benefits and include varied health services in their insurance. We understand that choosing the right policy at the best price is of utmost priority to our clients. Our partnerships with the most popular health insurance providers such as BUPA, Medibank, AHM, NIB and Allianz Care Australia gives you the flexibility to take the health cover of your choice at a highly competitive price.  Speak to our consultants today to get the right health insurance policy. "
             android:textSize="14sp" />
 
         <com.google.android.material.button.MaterialButton

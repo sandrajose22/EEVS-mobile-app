@@ -42,7 +42,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/contact_us" />
 
             </LinearLayout>
 
@@ -55,7 +55,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="Contentttttttttttttttttttttt"
+            android:text="It is now easy to have a personalized consultation with our team via phone at your convenience. Stay home, stay safe and connect with us virtually. "
             android:textSize="14sp" />
 
         <androidx.cardview.widget.CardView
@@ -85,12 +85,18 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:padding="8dp"
                     android:text="Sydney"
                     android:textAlignment="center"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="10dp"/>
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LEVEL 6 263 CLARENCE STREET SYDNEY NSW 2000 AUSTRALIA  +61 2 9269 0070  info@experteducation.com.au" />
 
             </LinearLayout>
 

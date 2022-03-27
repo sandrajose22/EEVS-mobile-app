@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/education_services" />
 
             </LinearLayout>
 
@@ -56,7 +56,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="Contentttttttttttttttttttttt"
+            android:text="Professional Year Course is a job ready program which offers international graduates an opportunity to experience real Australian work environment while enhancing their capability to obtain employment in their chosen field. Professional Year course is offered to the international graduates of Accounting, Information Technology and Engineering programs from Australia.  After the completion of the PY course, graduates can claim five (5) points towards their residency application as specified by the Department of Home Affairs (DHA). Professional Year course is a 44 weeks program with 12 weeks of internship component embedded in the course. The requirements for each PY course are different and for any queries, please contact us.  "
             android:textSize="14sp" />
 
         <com.google.android.material.button.MaterialButton

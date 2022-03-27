@@ -44,7 +44,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/student_admission" />
 
             </LinearLayout>
 
@@ -53,11 +53,11 @@
         <TextView
             android:id="@+id/text_notifications"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="241dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
-            android:text="Contentttttttttttttttttttttt"
+            android:text="At Expert Education and Visa Services, we have partnered with top PY course providers such as Education Centre of Australia (ECA), Performance Education, Queensland International Business Academy (QIBA), Navitas, Accountants Resource Centre (ARC), Stanley College and Australian Technical and Management College (ATMC) to deliver the best options to our clients.  Professional Year Course is a job ready program which offers international graduates an opportunity to experience real Australian work environment while enhancing their capability to obtain employment in their chosen field. "
             android:textSize="14sp" />
 
         <com.google.android.material.button.MaterialButton
