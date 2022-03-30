@@ -59,8 +59,8 @@
             android:textSize="14sp" />
 
         <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="429dp"
+            android:layout_height="240dp"
             android:layout_marginStart="10dp"
             android:layout_weight="0.5"
             app:cardBackgroundColor="@color/white"
@@ -97,6 +97,94 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="LEVEL 6 263 CLARENCE STREET SYDNEY NSW 2000 AUSTRALIA  +61 2 9269 0070  info@experteducation.com.au" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="429dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.5"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    android:text="Parramatta"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LEVEL 6 263 CLARENCE STREET SYDNEY NSW 2000 AUSTRALIA  +61 2 9269 0070  info@B1 TOWER, LEVEL 2/118 CHURCH ST, PARRAMATTA NSW 2150, AUSTRALIA  +61 2 8810 8754  parra@experteducation.com.au" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="429dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="0.5"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    android:text="EEVS Pacific"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LEVEL 6 263 CLARENCE STREET SYDNEY NSW 2000 AUSTRALIA  +61 2 9269 0070  info@LEVEL 9, 210 CLARENCE STREET NSW 2000 AUSTRALIA  +61 9053 8387  pacific@experteducation.com.au" />
 
             </LinearLayout>
 
