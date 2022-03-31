@@ -6,4 +6,5 @@
     <string name="title_contact">Contact</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="visa_application">Visa \n Application </string>
 </resources>

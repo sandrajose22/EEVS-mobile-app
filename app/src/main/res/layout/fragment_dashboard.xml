@@ -26,14 +26,13 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_margin="10dp"
                 android:layout_weight="0.5"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
+                app:cardPreventCornerOverlap="true">
 
                 <LinearLayout
                     android:id="@+id/studentAdmission"
@@ -63,14 +62,14 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="8dp"
                 android:layout_weight="0.5"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
+                app:cardPreventCornerOverlap="true">
 
                 <LinearLayout
                     android:id="@+id/visaApplication"
@@ -88,7 +87,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="8dp"
-                        android:text="Visa Application"
+                        android:text="@string/visa_application"
                         android:textAlignment="center"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -105,10 +104,13 @@
 
 
         <LinearLayout
+            android:id="@+id/grid2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal"
             android:weightSum="1"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/grid1">
@@ -117,14 +119,13 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_margin="10dp"
                 android:layout_weight="0.5"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
+                app:cardPreventCornerOverlap="true">
 
                 <LinearLayout
                     android:id="@+id/healthInsurance"
@@ -154,14 +155,14 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="16dp"
+                android:layout_margin="10dp"
+                android:layout_marginStart="15dp"
                 android:layout_weight="0.5"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="10dp"
                 app:cardMaxElevation="12dp"
-                app:cardPreventCornerOverlap="true"
-                app:cardUseCompatPadding="true">
+                app:cardPreventCornerOverlap="true">
 
                 <LinearLayout
                     android:id="@+id/professionalYear"
@@ -188,7 +189,17 @@
 
             </androidx.cardview.widget.CardView>
 
+
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grid2" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
